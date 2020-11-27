@@ -1,0 +1,15 @@
+@import './common.scss';
+
+.header {
+  background-color: $secondary;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  
+  .header-title {
+    font-size: 2rem;
+    color: $primary;
+  }
+}

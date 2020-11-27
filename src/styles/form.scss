@@ -1,0 +1,18 @@
+@import './common.scss';
+
+.form {
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+
+  .form-text,
+  .form-btn {
+    margin: 0.5rem 0;
+    width: 100%;
+    background-color: $secondary;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+}

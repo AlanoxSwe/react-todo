@@ -1,0 +1,49 @@
+.post-it {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin: 2rem 1rem;
+  background: #ffd707;
+  position: relative;
+  min-height: 200px;
+  cursor: pointer;
+  font-size: 1rem;
+  word-break: break-all;
+
+  &.completed {
+    opacity: 0.5;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -2em;
+    left: 0;
+    right: 2em;
+    border-width: 1em;
+    border-style: solid;
+    border-color: #ffd707;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -2em;
+    right: 0;
+    border-width: 2em 2em 0 0;
+    border-style: solid;
+    border-color: #d3b100 transparent;
+  }
+
+  .post-it-title {
+    font-weight: 600;
+  }
+
+  .post-it-delete {
+    align-self: flex-end;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
